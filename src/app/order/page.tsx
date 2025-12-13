@@ -50,7 +50,7 @@ export default function OrderPage() {
             </ul>
 
             <Button className="w-full" asChild>
-              <Link href="https://line.me/R/ti/p/@placeholder" target="_blank">このプランで相談する</Link>
+              <Link href="https://lin.ee/c0nSKDB" target="_blank">このプランで相談する</Link>
             </Button>
           </div>
 
@@ -87,7 +87,7 @@ export default function OrderPage() {
             </ul>
 
             <Button variant="outline" className="w-full" asChild>
-              <Link href="https://line.me/R/ti/p/@placeholder" target="_blank">このプランで相談する</Link>
+              <Link href="https://lin.ee/c0nSKDB" target="_blank">このプランで相談する</Link>
             </Button>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function OrderPage() {
 
         <div className="mt-16 text-center">
           <Button size="lg" className="px-12 py-6 text-lg" asChild>
-            <Link href="https://line.me/R/ti/p/@placeholder" target="_blank">
+            <Link href="https://lin.ee/c0nSKDB" target="_blank">
               LINEでオーダー相談する
             </Link>
           </Button>

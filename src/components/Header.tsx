@@ -52,7 +52,7 @@ export function Header() {
                         </Link>
                     ))}
                     <Button variant="default" className="ml-4" asChild>
-                        <Link href="https://line.me/R/ti/p/@placeholder" target="_blank">
+                        <Link href="https://lin.ee/c0nSKDB" target="_blank">
                             LINEで相談
                         </Link>
                     </Button>
@@ -87,7 +87,7 @@ export function Header() {
                             </Link>
                         ))}
                         <Button variant="default" className="w-full mt-4" asChild>
-                            <Link href="https://line.me/R/ti/p/@placeholder" target="_blank">
+                            <Link href="https://lin.ee/c0nSKDB" target="_blank">
                                 LINEで相談する
                             </Link>
                         </Button>

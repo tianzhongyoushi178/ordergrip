@@ -32,7 +32,7 @@ export function FloatingCTA() {
                         className="w-full shadow-lg shadow-accent/20 text-base font-bold py-6"
                         asChild
                     >
-                        <Link href="https://line.me/R/ti/p/@placeholder" target="_blank">
+                        <Link href="https://lin.ee/c0nSKDB" target="_blank">
                             LINEで無料相談する
                         </Link>
                     </Button>

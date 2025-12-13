@@ -40,7 +40,7 @@ export function HeroSection() {
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
                         <Button variant="default" size="lg" className="w-full md:w-auto px-8 py-6 text-lg shadow-[0_0_20px_rgba(200,168,90,0.3)]" asChild>
-                            <Link href="https://line.me/R/ti/p/@placeholder" target="_blank">
+                            <Link href="https://lin.ee/c0nSKDB" target="_blank">
                                 LINEで無料相談
                             </Link>
                         </Button>
