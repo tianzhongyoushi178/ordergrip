@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -36,8 +37,14 @@ export function Header() {
             )}
         >
             <div className="container mx-auto px-4 flex items-center justify-between">
-                <Link href="/" className="text-2xl font-bold tracking-widest text-main">
-                    ORDER GRIP
+                <Link href="/" className="flex items-center">
+                    <Image
+                        src="/images/logo.jpg"
+                        alt="ORDER GRIP"
+                        width={180}
+                        height={60}
+                        className="h-10 md:h-12 w-auto object-contain"
+                    />
                 </Link>
 
                 {/* Desktop Nav */}
