@@ -65,13 +65,13 @@ export function WorksSection() {
                 <motion.div
                     className="flex gap-4 px-4"
                     animate={{
-                        x: [0, -100 * instagramPosts.length + "%"],
+                        x: [0, -((100 / 3) * instagramPosts.length) + "%"],
                     }}
                     transition={{
                         x: {
                             repeat: Infinity,
                             repeatType: "loop",
-                            duration: 60,
+                            duration: 100,
                             ease: "linear",
                         },
                     }}
@@ -79,7 +79,8 @@ export function WorksSection() {
                         width: "max-content",
                     }}
                 >
-                    {extendedPosts.map((post, i) => (
+                    {/* 3回分繰り返すことで、末端と先端の繋ぎ目を完全にカバーする */}
+                    {[...extendedPosts].map((post, i) => (
                         <Link
                             key={`${post.id}-${i}`}
                             href={post.postUrl}
