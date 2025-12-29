@@ -39,8 +39,8 @@ const instagramPosts = [
     }
 ];
 
-// ループのためにリストを繰り返す
-const extendedPosts = [...instagramPosts, ...instagramPosts, ...instagramPosts];
+// ループのためにリストを2回繰り返す
+const extendedPosts = [...instagramPosts, ...instagramPosts];
 
 export function WorksSection() {
     return (
@@ -64,23 +64,18 @@ export function WorksSection() {
             <div className="relative w-full overflow-hidden">
                 <motion.div
                     className="flex gap-4 px-4"
-                    animate={{
-                        x: [0, -((100 / 3) * instagramPosts.length) + "%"],
-                    }}
+                    initial={{ x: "0%" }}
+                    animate={{ x: "-50%" }}
                     transition={{
-                        x: {
-                            repeat: Infinity,
-                            repeatType: "loop",
-                            duration: 100,
-                            ease: "linear",
-                        },
+                        duration: 120,
+                        ease: "linear",
+                        repeat: Infinity,
                     }}
                     style={{
                         width: "max-content",
                     }}
                 >
-                    {/* 3回分繰り返すことで、末端と先端の繋ぎ目を完全にカバーする */}
-                    {[...extendedPosts].map((post, i) => (
+                    {extendedPosts.map((post, i) => (
                         <Link
                             key={`${post.id}-${i}`}
                             href={post.postUrl}
